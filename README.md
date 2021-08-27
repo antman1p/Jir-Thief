@@ -1,4 +1,4 @@
-# Conf-thief
+# Jir-thief
 This Module will connect to Jira's API using an access token, export to a word .doc, and download the Jira issues
 that the target has access to. It allows you to use a dictionary/keyword search file to search all files in the target
 Jira for potentially sensitive data. It will output exfiltrated DOCs to the ./loot directory
@@ -32,5 +32,4 @@ optional arguments:
 ## TODO
 - Threading
 - Logging
-- ~~Use actual pdf file names~~
 - Map keyword searches to downloaded files
