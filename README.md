@@ -6,7 +6,7 @@ Jira for potentially sensitive data. It will output exfiltrated DOCs to the ./lo
 `pip install requests`
 ## Usage
 ```
-python3 conf_thief.py [-h] -j <TARGET URL> -u <Target Username> -p <API ACCESS TOKEN> -d <DICTIONARY FILE PATH> [-a] "<UA STRING>"
+python3 jir_thief.py [-h] -j <TARGET URL> -u <Target Username> -p <API ACCESS TOKEN> -d <DICTIONARY FILE PATH> [-a] "<UA STRING>"
 
 
 arguments:
