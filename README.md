@@ -4,6 +4,7 @@ that the target has access to. It allows you to use a dictionary/keyword search 
 Jira for potentially sensitive data. It will output exfiltrated DOCs to the ./loot directory
 ## Dependencies
 `pip install requests`
+## Warning.  Using the provided keyword list will produce a MASS of results, take a LONG time to search and download, and will send a LOT of API requests.  You mightt consider starting with a smaller list.
 ## Usage
 ```
 python3 jir_thief.py [-h] -j <TARGET URL> -u <Target Username> -p <API ACCESS TOKEN> -d <DICTIONARY FILE PATH> [-a] "<UA STRING>"
