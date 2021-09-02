@@ -1,10 +1,12 @@
+<a href="https://twitter.com/antman1p"><img src="https://img.shields.io/twitter/follow/antman1p.svg?logo=twitter"></a>
 # Jir-thief
 This Module will connect to Jira's API using an access token, export to a word .doc, and download the Jira issues
 that the target has access to. It allows you to use a dictionary/keyword search file to search all files in the target
 Jira for potentially sensitive data. It will output exfiltrated DOCs to the ./loot directory
 ## Dependencies
 `pip install requests`
-## Warning.  Using the provided keyword list will produce a MASS of results, take a LONG time to search and download, and will send a LOT of API requests.  You mightt consider starting with a smaller list.
+## Warning!!!  
+Using the provided keyword list will produce a MASS of results, take a LONG time to search and download, and will send a LOT of API requests.  You might consider starting with a smaller list.
 ## Usage
 ```
 python3 jir_thief.py [-h] -j <TARGET URL> -u <Target Username> -p <API ACCESS TOKEN> -d <DICTIONARY FILE PATH> [-a] "<UA STRING>"
