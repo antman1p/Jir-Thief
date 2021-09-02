@@ -1,4 +1,11 @@
+<h1 align="center">
+  <img src="static/jir_thief-banner.png" alt="jir-thief" width="200px"></a>
+  <br>
+</h1>
+<p align="center">
 <a href="https://twitter.com/antman1p"><img src="https://img.shields.io/twitter/follow/antman1p.svg?logo=twitter"></a>
+</p>
+
 # Jir-thief
 This Module will connect to Jira's API using an access token, export to a word .doc, and download the Jira issues
 that the target has access to. It allows you to use a dictionary/keyword search file to search all files in the target
