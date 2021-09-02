@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="static/jir_thief-banner.png" alt="jir-thief" width="200px"></a>
+  <img src="static/jir_thief-banner.png" alt="jir-thief" width="400px"></a>
   <br>
 </h1>
 <p align="center">
