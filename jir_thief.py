@@ -89,16 +89,17 @@ def searchKeyWords(path, username, access_token, cURL):
                     headers=default_headers,
                     params=searchQuery
                 )
-
-                jsonResp = json.loads(response.text)
-                if jsonResp['total']:
-                    issues = jsonResp['issues']
-                    for issue in issues:
-                        issueKey = issue['key']
-                        issueSet.add(issueKey)
-
-
-                start_point += 100
+                try:
+                    jsonResp = json.loads(response.text)
+                    if jsonResp['total']:
+                        issues = jsonResp['issues']
+                        for issue in issues:
+                            issueKey = issue['key']
+                            issueSet.add(issueKey)
+                    start_point += 100
+                except:
+                    print("[*] Error gathering issues.")
+                    start_point += 100
 
             if len(issueSet) > tempSetCount:
                 count = len(issueSet) - tempSetCount
